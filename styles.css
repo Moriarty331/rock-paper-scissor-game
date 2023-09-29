@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+
+:root
+{
+    --primary: #ACE1AF;
+    --secondary: black;
+    --tertiary: peachpuff;
+}
+
+
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Pixelify Sans', cursive;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+.container{
+    max-width: 500px;
+    margin: auto;
+    min-height: 200px;
+    background-color: var(--tertiary);
+    margin-top: 11rem; 
+    border-radius: 10px;
+}
+
+
+.title
+{
+    background-color: var(--primary);
+}
+
+.title > div
+{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.title img
+{
+    width: 12%;
+}
+
+.title h1
+{
+    font-size: 1.5rem;
+}
+
+#choices img
+{
+    width: 50%;
+}
+
+#choices
+{
+    overflow-y: scroll;
+    margin-top: 1rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-color: var(--tertiary);    
+}
+
+#choices > button
+{
+    height: 5.5rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    
+}
+
+#choices > button:hover
+{
+    cursor: pointer;
+    background-color: #8FBC8B;
+}
+
+.decide{
+    display: none;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.result
+{
+    background-color: var(--primary);
+    font-size: 1.8rem;
+    border-radius: 10px;
+}
+
+.reset
+{
+    cursor: pointer;
+    text-align: center;
+    width: 8rem;
+    height: 2rem;
+    background-color: var(--primary);
+    font-weight: 300;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+
+}
+
+.reset:hover
+{
+    background-color: #BA0021ed;
+}
+
+.match
+{
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-color: var(--tertiary);
+    padding-bottom: 2rem;
+}
+
+.match img
+{
+    width: 50%;
+}
+
+.match > button
+{
+    height: 5.5rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    
+}
+
+/* Tablet styles */
+@media (min-width: 472px) 
+    {
+    /* Add CSS rules for tablets here */
+    #choices > button
+    {
+        height: 7rem;
+    }
+
+    .match > button
+    {
+        height: 7rem;
+    }
+  }
